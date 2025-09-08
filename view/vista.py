@@ -4,15 +4,15 @@ from tkinter import ttk, scrolledtext
 class App:
     def __init__(self, root):
         self.root = root
-        root.title("Simulación de moneda (MVC)")
+        root.title("Simulación de moneda")
 
         frm_opts = ttk.Frame(root, padding=10)
         frm_opts.grid(row=0, column=0, sticky="ew")
 
         ttk.Label(frm_opts, text="Selecciona lado:").grid(row=0, column=0, sticky="w")
         self.lado_var = tk.IntVar(value=0)
-        ttk.Radiobutton(frm_opts, text="CARA (0)", variable=self.lado_var, value=0).grid(row=0, column=1)
-        ttk.Radiobutton(frm_opts, text="CRUZ (1)", variable=self.lado_var, value=1).grid(row=0, column=2)
+        ttk.Radiobutton(frm_opts, text="CARA", variable=self.lado_var, value=0).grid(row=0, column=1)
+        ttk.Radiobutton(frm_opts, text="CRUZ", variable=self.lado_var, value=1).grid(row=0, column=2)
 
         self.btn_simular = ttk.Button(frm_opts, text="Simular")
         self.btn_simular.grid(row=0, column=3, padx=8)
