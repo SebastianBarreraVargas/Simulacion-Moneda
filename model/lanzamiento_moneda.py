@@ -15,4 +15,4 @@ def simular_moneda(lado):
         probabilidad = (favorables / n) * 100
         probabilidades.append(probabilidad)
 
-    return tuple(probabilidades)
+    return tuple(probabilidades), lanzamientos
