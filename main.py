@@ -1,4 +1,3 @@
-# main.py  (poner en la raíz del proyecto)
 import sys
 from pathlib import Path
 import tkinter as tk
